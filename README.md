@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
--  Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-fylo-dark-theme-landing-page-using-flex-and-css-grid-uAm1Ijy-bm)
--  Live Site URL: [live site URL here](https://youthful-liskov-5d664e.netlify.app/)
+-  Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/responsive-easybank-landing-page-using-flexbox-and-css-grid-3R2oAJ5p_m)
+-  Live Site URL: [live site URL here](https://vigorous-lamport-a822dd.netlify.app/)
 
 ## Built with
 
