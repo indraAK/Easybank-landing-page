@@ -1,0 +1,96 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+footer {
+   background-color: $dark;
+   padding: 5rem 0;
+
+   .row {
+      @include media-max(835px) {
+         flex-direction: column;
+         text-align: center;
+         align-items: center;
+      }
+   }
+
+   .col {
+      @include media-max(835px) {
+         width: 100%;
+      }
+   }
+
+   .logo-img {
+      display: inline-block;
+   }
+
+   .scm-list {
+      display: flex;
+      margin-top: 5rem;
+
+      @include media-max(835px) {
+         justify-content: center;
+         margin-top: 3rem;
+      }
+
+      .scm-item {
+         margin-right: 1.25rem;
+
+         @include media-max(835px) {
+            margin: 0 1rem;
+         }
+      }
+
+      .scm-icon:hover path {
+         fill: $green;
+      }
+   }
+
+   .links {
+      display: flex;
+      flex-direction: column;
+
+      &-1 {
+         @include media-max(835px) {
+            margin-top: 3rem;
+         }
+      }
+
+      &-2 {
+         @include media-max(835px) {
+            margin-top: 1.5rem;
+         }
+      }
+
+      li:not(:first-child) {
+         margin-top: 1.5rem;
+      }
+
+      a {
+         font-size: 1.5rem;
+         color: $light-100;
+
+         &:hover {
+            color: $green;
+         }
+      }
+   }
+
+   .copyright {
+      text-align: right;
+
+      @include media-max(835px) {
+         text-align: center;
+      }
+
+      &-text {
+         font-size: 1.5rem;
+         margin-top: 3rem;
+      }
+
+      .btn {
+         @include media-max(835px) {
+            margin-top: 4rem;
+         }
+      }
+   }
+}

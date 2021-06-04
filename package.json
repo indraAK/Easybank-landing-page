@@ -1,0 +1,33 @@
+{
+   "name": "easybank-landing-page-master",
+   "version": "1.0.0",
+   "description": "Landing page for easybank website",
+   "main": "index.js",
+   "private": true,
+   "scripts": {
+      "start": "webpack serve --config webpack.dev.js",
+      "build": "webpack --config webpack.prod.js"
+   },
+   "keywords": [
+      "landing-page",
+      "easybank",
+      "frontendmentor"
+   ],
+   "author": "Indra Adi Kusuma",
+   "license": "ISC",
+   "devDependencies": {
+      "css-loader": "^5.2.6",
+      "css-minimizer-webpack-plugin": "^3.0.1",
+      "html-loader": "^2.1.2",
+      "html-webpack-plugin": "^5.3.1",
+      "mini-css-extract-plugin": "^1.6.0",
+      "node-sass": "^6.0.0",
+      "sass": "^1.34.0",
+      "sass-loader": "^11.1.1",
+      "style-loader": "^2.0.0",
+      "webpack": "^5.38.1",
+      "webpack-cli": "^4.7.0",
+      "webpack-dev-server": "^3.11.2",
+      "webpack-merge": "^5.7.3"
+   }
+}

@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+
+// Colors
+.text-dark {
+   color: $dark;
+}
+
+.text-green {
+   color: $green;
+}
+
+.text-cyan {
+   color: $cyan;
+}
+
+.text-gray {
+   color: $gray;
+}
+
+.text-light {
+   color: $light;
+}
+
+.text-light-100 {
+   color: $light-100;
+}
+
+.color-white {
+   color: $white;
+}
+
+// font weights
+.fw-light {
+   font-weight: map-get($font-weights, "light");
+}
+
+.fw-normal {
+   font-weight: map-get($font-weights, "regular");
+}
+
+.fw-bold {
+   font-weight: map-get($font-weights, "bold");
+}

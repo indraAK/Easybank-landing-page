@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: "Public Sans", sans-serif;
+   font-size: 1.8rem;
+   font-weight: map-get($font-weights, "regular");
+
+   @include media-max(map-get($breakpoints, "sm")) {
+      font-size: 1.6rem;
+   }
+}
+
+p {
+   line-height: 1.5;
+}
+
+.heading-2 {
+   font-size: 3.3rem;
+}

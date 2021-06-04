@@ -1,0 +1,25 @@
+// Breakpoints
+$breakpoints: (
+   xs: 375px,
+   sm: 576px,
+   md: 768px,
+   lg: 992px,
+   xl: 1200px,
+   xxl: 1400px,
+);
+
+// Colors
+$dark: hsl(233, 26%, 24%);
+$green: hsl(136, 65%, 51%);
+$cyan: hsl(192, 70%, 51%);
+$gray: hsl(233, 8%, 62%);
+$light: hsl(0, 0%, 98%);
+$light-100: hsl(220, 16%, 96%);
+$white: hsl(0, 0%, 100%);
+
+// Font weights
+$font-weights: (
+   light: 300,
+   regular: 400,
+   bold: 700,
+);

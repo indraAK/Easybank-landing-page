@@ -1,0 +1,50 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.articles {
+   padding: 10rem 0 7rem;
+   background-color: hsl(0, 0%, 98%);
+
+   .row {
+      margin-top: 5rem;
+   }
+
+   .intro {
+      @include media-max(map-get($breakpoints, "md")) {
+         text-align: center;
+      }
+   }
+
+   .article {
+      box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.05);
+      margin-bottom: 3rem;
+
+      &-img {
+         height: 22rem;
+         object-fit: cover;
+         transition: transform 200ms ease-in;
+
+         &:hover {
+            transform: scale(1.05);
+         }
+      }
+
+      &-author {
+         display: block;
+         font-size: 1.2rem;
+         font-style: normal;
+         font-weight: 300;
+         margin-bottom: 1.3rem;
+      }
+
+      &-title {
+         &:hover {
+            color: $green;
+         }
+      }
+
+      &-text {
+         font-size: 1.45rem;
+      }
+   }
+}

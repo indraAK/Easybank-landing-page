@@ -1,0 +1,27 @@
+.btn {
+   display: inline-block;
+   cursor: pointer;
+   outline: 0;
+   border: 0;
+   background-color: transparent;
+   color: hsl(0, 0%, 100%);
+   font-family: inherit;
+   font-size: 1.4rem;
+   letter-spacing: 0.4px;
+   padding: 1.3rem 3rem;
+   border-radius: 3rem;
+   user-select: none;
+   transition: 200ms ease-in-out;
+
+   &:hover {
+      filter: opacity(80%);
+   }
+}
+
+.btn-primary {
+   background-image: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+   );
+}

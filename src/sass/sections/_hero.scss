@@ -1,0 +1,91 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero {
+   min-height: 100vh;
+   overflow-x: hidden;
+
+   @include media-max(map-get($breakpoints, "lg")) {
+      padding-bottom: 5rem;
+   }
+
+   .row {
+      @include media-max(map-get($breakpoints, "lg")) {
+         flex-direction: column-reverse;
+      }
+   }
+
+   .intro {
+      max-width: 43rem;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      margin-top: 5rem;
+
+      @include media-max(map-get($breakpoints, "lg")) {
+         min-height: 60vh;
+         max-width: 60rem;
+         margin: 0 auto;
+         text-align: center;
+      }
+
+      @include media-max(map-get($breakpoints, "sm")) {
+         min-height: 100%;
+         padding: 2.5rem 0 3.5rem;
+      }
+
+      h1 {
+         font-size: clamp(3.3rem, 7vw, 5.3rem);
+         font-weight: 400;
+      }
+
+      p {
+         margin-top: 2rem;
+      }
+
+      .btn {
+         margin-top: 3rem;
+      }
+   }
+
+   .bg-intro {
+      min-height: 100vh;
+      margin-right: calc(-5vw - 2rem);
+      background-image: url("../images/bg-intro-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 150% 125%;
+      background-position: bottom -3rem right calc(-20vw + 25%);
+      overflow: hidden;
+
+      @include media-max(map-get($breakpoints, "lg")) {
+         min-height: 100vh;
+         background-size: cover;
+         background-position: top;
+         margin-left: calc(-5vw - 2rem);
+      }
+
+      @include media-max(map-get($breakpoints, "sm")) {
+         min-height: 50vh;
+         background-image: url("../images/bg-intro-mobile.svg");
+      }
+   }
+
+   .img-mockups {
+      margin-left: auto;
+      width: 100%;
+      max-width: 65rem;
+      transform: translate(calc(-10vw + 35%), 0) scale(1.08);
+
+      @include media-max(map-get($breakpoints, "lg")) {
+         margin-left: auto;
+         margin-right: auto;
+         padding: 0 3rem;
+         max-width: 65rem;
+         transform: translate(0, 0) scale(1.05);
+      }
+
+      @include media-max(map-get($breakpoints, "sm")) {
+         transform: translate(0, calc(-2rem - 2%)) scale(1.03);
+      }
+   }
+}

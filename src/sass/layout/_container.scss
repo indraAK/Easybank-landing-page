@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.container {
+   width: 95vw;
+   margin: 0 auto;
+   padding: 0 15px;
+
+   @include media-min(map-get($breakpoints, "md")) {
+      width: 90vw;
+   }
+
+   @include media-max(map-get($breakpoints, "xs")) {
+      width: 100%;
+   }
+}
