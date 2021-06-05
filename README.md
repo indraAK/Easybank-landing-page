@@ -54,7 +54,7 @@ Users should be able to:
 ## Author
 
 -  Facebook - [Indra Adi Kusuma](https:/facebook.com/profile.php?id=100009019826862)
--  Instagram - [@mrx.indra](https://instagram.com/mrx_indra)
+-  Instagram - [@mrx.indra](https://instagram.com/mrx.indra)
 -  Twitter - [@indrakusuma007](https://twitter.com/indrakusuma007?s=09)
 -  LinkedIn - [Indra Adi Kusuma](https://www.linkedin.com/in/indra-adi-kusuma-a37955173)
 -  Frontend Mentor - [@indraAK](https://www.frontendmentor.io/profile/indraAK)
